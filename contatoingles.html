@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Impact of games on mental health.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/joystick_808476.webp">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Titillium+Web:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <img class="logo" src="img/joystick_808476.webp" alt="">
+       <div class="nav-wrapper">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">☰</label>
+
+            <nav>
+                <ul>
+                    <li><a class="menu" href="indexingles.html">Home</a></li>
+                    <li><a class="menu" href="sobreeingles.html">About</a></li>
+                    <li><a class="menu" href="aplicacoesingles.html">Applications</a></li>
+                    <li><a class="menu" href="galery.html">Galery</a></li>
+                    <li><a class="menu" href="bibliografiaingles.html">Bibliography</a></li>
+                    <li class="previaMenu"><a class="menu">Credits
+                        <div class="previa">
+                            <a class="menu" href="creditosingles.html#orientadores">
+                                <img src="img/preview-orientadores.jpg" alt="">
+                                <span>Advisors</span>
+                            </a>
+                            <a class="menu" href="aluingles.html#devs">
+                                <span>Developers</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a class="menu ativa" href="contatoingles.html">Contact</a></li>
+                    <li><a class="menu ativa" href="indexingles.html"><img class="bandeiras" src="bandeiras/eua.png"></a></li>
+                    <li><a class="menu " href="index.html"><img class="bandeiras" src="bandeiras/Brasil.png"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!--=============== CONTATO ================-->
+    <main class="espacoTopo">
+
+        <h2 class="contatoh2">Contact - us</h2>
+
+        <form>
+            <!--nome-->
+            <label for="nome">Name:</label>
+            <input type="text" id="nome" name="nome" required minlength="3" maxlength="60"
+                placeholder="Enter your name. (Required*)" pattern="[a-zA-ZÀ-ÿ\s]+">
+            <!--email-->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required minlength="5" maxlength="50"
+                placeholder="Enter your email. (Required*)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Digite seu email.">
+
+            <!--telefone-->
+            <label for="tel">phone</label>
+            <input type="text" id="tel" name="tel" required="required" pattern="[0-9()+\-\s]+" title="(+DDD-99999-8888)"
+                maxlength="16" placeholder="Enter your Phone (Required*)">
+
+            <!--Avaliação-->
+            <label for="categoria">Avaliação:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="" disabled selected hidden>Rate us (Required*)</option>
+                <option value="0">0 Stars</option>
+                <option value="1">1 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+
+            <label for="comentario">Comentary:</label>
+            <textarea id="comentario" rows="6" cols="40" placeholder="Leave your comment"></textarea>
+
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+
+        </form>
+    </main>
+
+   
+     <footer>
+        <h5>ETEC FERRÚCIO HUMBERTO GAZZETTA 2026 - &copy;All rights reserved<br>
+            Non-profit academic work.</h5>
+    </footer>
+
+    <a class="topo" href="#"><img class="seta" src="img/setacima.webp"></a>
+
+</body>
+
+</html>
